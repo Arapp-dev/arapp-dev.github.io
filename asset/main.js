@@ -6,14 +6,36 @@ document.addEventListener('DOMContentLoaded', () => {
       if (entry.isIntersecting) {
         
         entry.target.classList.add('show');
-      } else {
+       }  //else {
      
-        entry.target.classList.remove('show');
-      }
+      //    entry.target.classList.remove('show');
+      // }
     });
   }, {
     threshold: 0.1
   });
 
   elements.forEach(el => observer.observe(el));
+
+//  const elements2 = document.querySelectorAll('.ha');
+
+//   const observer2 = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add('show2');
+//       }
+//     });
+//   }, {
+//     threshold: 0.2
+//   });
+
+//   elements2.forEach(el => observer2.observe(el));
 });
+
+const baaa = document.querySelector(".clik")
+function baa(){
+    baaa.classList.add("baa")
+    setTimeout(() => {
+      baaa.classList.remove("baa")
+    }, 5000);
+}
