@@ -9,6 +9,29 @@ body::-webkit-scrollbar{
     display: none;
     
 }
+.clik{
+
+    display: none;
+}
+.clik img{
+ width: 60%;
+ 
+}
+.baa{
+    animation: baa 0.6s forwards ease-in;
+    display: block;
+}
+@keyframes baa{
+    from{
+        opacity: 0.2;
+        transform: scale(0.4);
+        
+    }
+    to{
+        opacity: 1;
+        transform:scale(1);
+    } 
+}
 *{  margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -92,6 +115,9 @@ body{
     animation: masukT 1s forwards;
     z-index: 100;
 }
+.header i{
+    display: none;
+}
 .logo{
     font-size: 25px;
     color: rgb(71, 52, 240);
@@ -129,6 +155,8 @@ body{
     align-items: center;
 }
 .container-text h1{
+        border-left: 6px solid #cb53bf7b;
+padding-left: 10px;
     margin-bottom: 10px;
     background-image: -webkit-linear-gradient(30deg,#cb53bf7b 0%,#a7e3ff 60%);
     background-clip: text;
@@ -249,10 +277,13 @@ body{
   transform: translateY(0);
 }
 
+
 .containerr .data > h1{
     color: rgb(149, 88, 210);
     margin-bottom: 4px;
+    
 }
+
 .containerr .data{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -334,7 +365,31 @@ body{
   opacity: 0.8;
 }
 @media screen and (max-width: 600px) {
-
+.clik{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    display: none;
+}
+.clik img{
+ width: 60%;
+ 
+}
+.baa{
+    animation: baa 0.6s forwards ease-in;
+    display: block;
+}
+@keyframes baa{
+    from{
+        opacity: 0.2;
+        transform: scale(0.4);
+        
+    }
+    to{
+        opacity: 1;
+        transform:scale(1);
+    } 
+}
 
     .data{
     transition: 0.3s ease-out;
@@ -419,19 +474,20 @@ body{
     font-weight: 600;
 }
 .navbar a{
-    filter: drop-shadow(0px 0px 3px rgb(248, 241, 235));
-    color: rgba(255, 255, 255, 0.703);
-    font-size: 18px;
-    text-decoration: none;
-    margin-left:35px ;
-    font-weight: 650;
+    display: none;
 }
 .bg{
     display: none;
 }
 
+.header i {
+    margin-right: 1rem;
+    display: block;
+    cursor: pointer;
+}
 .container{
-    height: 100vh;
+    margin-top: 5rem;
+    height: 80vh;
     display: block;
     align-items: center;
 }
@@ -443,6 +499,7 @@ body{
     text-emphasis-color: transparent;
     -webkit-text-fill-color: transparent;
     color: #5b88d0;
+    font-size: 3rem;
     animation: masukL 1s forwards ease-out;
 }
 .container-text{
@@ -451,7 +508,7 @@ body{
     animation: masukL 1s forwards ease-in;
     color: white;
     font-size: 25px;
-    margin-left: 15px;
+    margin: 15rem 1rem 15rem 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -478,7 +535,8 @@ body{
     width: 350px;
     border-radius: 50%;
     animation: masukR 1s forwards ease-out;
-    box-shadow: 0px 0px 10px rgb(149, 88, 210);
+    box-shadow: none !important;
+    margin-left: 1rem;
     filter: drop-shadow(0px 0px 12px rgb(149, 88, 210));
 }
 .medsos{
@@ -532,16 +590,16 @@ body{
   transition-delay: 0.15s;
 }
 .data:nth-child(3) {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 .data:nth-child(4) {
-  transition-delay: 0.45s;
+  transition-delay: 0.25s;
 }
 
 .containerr {
 
   
-  margin-top: 11em;
+  margin-top: 25rem;
   margin-bottom: 2rem;
   
   display: flex;
@@ -555,6 +613,11 @@ body{
   opacity: 1;
   transform: translateY(0);
 }
+.show2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .containerr .data > h1{
     color: rgb(149, 88, 210);
@@ -563,9 +626,9 @@ body{
 .containerr .data{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    flex: 0 1 30rem;
+    flex: 0 1 20rem;
     background-color:var(--sc-bg);
-    padding: 2rem 1rem 2rem;
+    padding: 1rem 0.5rem 1rem;
     color: #d8d8d8;
     border-radius: 2rem;
     text-align: center;
